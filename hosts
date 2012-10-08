@@ -1,7 +1,45 @@
-#UPDATE:12-09-09 09:09
+127.0.0.1 localhost
+192.168.1.25 myplace.hell
 
-127.0.0.1	localhost
+# The following lines are desirable for IPv6 capable hosts
+#::1 localhost myplace.hell
+::1 localhost
+::1 ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
+
+
+#xiaoranzzz start
+#Update 2012-10-8
+
+#google
+74.125.128.139 code.google.com
+74.125.128.100 groups.google.com
+74.125.128.100 googlegroup.com
+
+50.97.143.30 keyduel.tumblr.com
+199.7.177.244 hotfile.com
+195.122.131.4 rapidshare.com
+78.140.163.15 filesonic.com
+199.16.156.6 t.co
+
+#174.36.30.74 linux.dropbox.com
+#199.47.216.179 dropbox.com
+#199.47.217.170 www.dropbox.com
+#174.36.30.74 linux.dropbox.com
+#184.72.241.245 dl-web.dropbox.com
+#199.47.217.179 dl.dropbox.com
+
+69.171.237.16    facebook.com
+69.171.237.16    www.facebook.com
+
+#xiaoranzzz end
+
 #SmartHosts START
+#Update 2012-10-8
 
 #Google Services START
 
@@ -735,3 +773,8 @@
 #YouTube END
 
 #SmartHosts END
+
+
+
+
+
