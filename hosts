@@ -167,9 +167,9 @@ ff02::3 ip6-allhosts
 74.125.128.103	ghs46.google.com
 74.125.128.103	ghs46.l.google.com
 74.125.128.103	google.com
-74.125.128.103	googleapis.l.google.com
-74.125.128.103	googleapis-ajax.google.com
-74.125.128.103	googleapis-ajax.l.google.com
+74.125.128.95	googleapis.l.google.com
+74.125.128.95	googleapis-ajax.google.com
+74.125.128.95	googleapis-ajax.l.google.com
 74.125.128.103	googlecode.l.google.com
 74.125.128.103	google-public-dns-a.google.com
 74.125.128.103	google-public-dns-b.google.com
@@ -459,17 +459,17 @@ ff02::3 ip6-allhosts
 74.125.128.103	wcproxyx.appspot.com
 74.125.128.103	www.appspot.com
 
-74.125.128.103	ajax.googleapis.com
-74.125.128.103	chart.googleapis.com
-74.125.128.103	fonts.googleapis.com
-74.125.128.103	maps.googleapis.com
-74.125.128.103	mt0.googleapis.com
-74.125.128.103	mt1.googleapis.com
-74.125.128.103	mt2.googleapis.com
-74.125.128.103	mt3.googleapis.com
-74.125.128.103	redirector-bigcache.googleapis.com
-74.125.128.103	translate.googleapis.com
-#74.125.128.105	www.googleapis.com
+74.125.128.95	ajax.googleapis.com
+74.125.128.95	chart.googleapis.com
+74.125.128.95	fonts.googleapis.com
+74.125.128.95	maps.googleapis.com
+74.125.128.95	mt0.googleapis.com
+74.125.128.95	mt1.googleapis.com
+74.125.128.95	mt2.googleapis.com
+74.125.128.95	mt3.googleapis.com
+74.125.128.95	redirector-bigcache.googleapis.com
+74.125.128.95	translate.googleapis.com
+#74.125.128.95	www.googleapis.com
 
 74.125.128.103	autoproxy-gfwlist.googlecode.com
 74.125.128.103	chromium.googlecode.com
