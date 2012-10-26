@@ -2,7 +2,10 @@
 use strict;
 use warnings;
 
-our $GOOGLE;
+our $IPTable;
+use lib qw/./;
+use IPTable;
+
 
 sub netselect {
 	open FI,'-|','sudo','netselect','-v',@_;
@@ -14,7 +17,7 @@ sub netselect {
 	return "";
 }
 
-sub getdomains {
+sub selectIP {
 #	return {
 #		'www.google.com'=>'74.125.128.105',
 #		'www.googlesource.com'=>'74.125.128.82',
@@ -23,12 +26,12 @@ sub getdomains {
 #		'www.gstatic.com'=>'74.125.128.120',
 #		'accounts.google.com'=>'74.125.128.105',
 #	};
-	my @names = keys %{$GOOGLE};
+	my @names = keys %{$IPTable};
 	my %domains;
 	foreach(@names) {
-		if($GOOGLE->{$_}) {
+		if($IPTable->{$_}) {
 			print STDERR "Select fastest ip for $_:\n";
-			$domains{$_} = netselect(@{$GOOGLE->{$_}});
+			$domains{$_} = netselect(@{$IPTable->{$_}});
 			print STDERR "$_ -> $domains{$_}\n";
 		}
 	}
@@ -77,10 +80,9 @@ sub writehost {
 	close FO;
 }
 
-do "google.pm";
 open FI,'<','hosts' or die("$!\n");
 my @hosts = <FI>;
 close FI;
 
-writehost(gettable(getdomains(),@hosts),@hosts);
+writehost(gettable(selectIp(),@hosts),@hosts);
 

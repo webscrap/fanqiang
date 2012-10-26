@@ -1,10 +1,12 @@
 #!/usr/bin/perl -w
 use strict;
 use warnings;
-
+use lib '.';
+use IPTable;
+our $IPTable;
 
 sub netselect {
-	open FI,'-|','sudo','netselect','-v',@_;
+	open FI,'-|','sudo','netselect','-vv',@_;
 	my $msg = join("",<FI>);
 	close FI;
 	if($msg =~ m/\s*\d+\s+([\d\.]+)/) {
@@ -13,11 +15,8 @@ sub netselect {
 	return "";
 }
 
-our $GOOGLE;
-do "google.pm";
-
 foreach(@ARGV) {
-	my $table = $GOOGLE->{$_};
+	my $table = $IPTable->{$_};
 	if($table) {
 		print STDERR "Select fastest ip for $_:\n";
 		print join("\n",netselect(@{$table})),"\n";
