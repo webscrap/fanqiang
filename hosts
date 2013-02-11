@@ -740,7 +740,8 @@ ff02::3 ip6-allhosts
 204.232.175.78	documentcloud.github.com
 207.97.227.239	github.com
 204.232.175.94	gist.github.com
-107.21.116.220	help.github.com
+#107.21.116.220	help.github.com
+54.235.148.35	help.github.com
 207.97.227.252	nodeload.github.com
 199.27.76.130	raw.github.com
 107.22.3.110	status.github.com
